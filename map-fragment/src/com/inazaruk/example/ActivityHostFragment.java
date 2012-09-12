@@ -55,4 +55,11 @@ public abstract class ActivityHostFragment extends LocalActivityManagerFragment 
         }
         return wd;
     }
+
+    /**
+     * For accessing public methods of the hosted activity
+     */
+    public Activity getHostedActivity() {
+		return getLocalActivityManager().getActivity(ACTIVITY_TAG);
+	}
 }
