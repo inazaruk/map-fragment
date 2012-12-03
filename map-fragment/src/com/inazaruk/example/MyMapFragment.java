@@ -16,12 +16,10 @@
 
 package com.inazaruk.example;
 
-import android.app.Activity;
-
-public class MyMapFragment extends ActivityHostFragment {
+public class MyMapFragment extends ActivityHostFragment<MyMapActivity> {
     
     @Override
-    protected Class<? extends Activity> getActivityClass() {
+    protected Class<MyMapActivity> getActivityClass() {
         return MyMapActivity.class;
     }
 }
